@@ -1,0 +1,107 @@
+.home-hero-sec{
+    width: 80%;
+    margin: auto;
+    height: 80vh;
+    display: flex;
+}
+.right-area{
+ width: 40%;
+ display: flex;
+ height: 100%;
+ align-items: center;
+ justify-content: center;
+ margin-left: 100px;
+}
+.hero-img{
+    height: 425px;
+    border-radius: 20px;
+    border-top-right-radius: 150px;
+    border-bottom-left-radius: 150px;
+    border: 3px solid var(--secondary-color);
+}
+.left-area{
+    width: 60%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.hero-heading{
+    font-size: 45px;
+    letter-spacing: 1px;
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+.hero-heading span{
+    color: var(--success-color);
+    line-height: 1;
+}
+
+.hero-para{
+    color: var(--secondary-color);
+    margin-bottom: 2rem;
+    width: 95%;
+    font-size: 14px;
+    line-height: 1.5;
+}
+.btn-cont button{
+    margin-right: 1rem;
+}
+@media screen and (max-width:880px) {
+    .home-hero-sec{
+        width: 90%;
+        flex-direction: column-reverse;
+        height: fit-content;
+        align-items: center;
+        margin: 0;
+    }
+    .right-area{
+        height: 50%;
+        margin: 0;
+        margin-top: 3rem;
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    .left-area{
+        height: 50%;
+        width: 100%;
+        margin-bottom: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .hero-heading{
+        text-align: center;
+    }
+    .hero-para{
+        text-align: center;
+    }
+    .btn-cont{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media screen and (max-width:450px) {
+    .home-hero-sec{
+        width: 100%;
+    }
+    .right-area{
+        width: 100%;
+        margin-top: 1rem;
+    }
+    .right-area img{
+        width: 90%;
+        margin: 0;
+        border-top-right-radius: 120px;
+        border-bottom-left-radius: 120px;
+    }
+   .left-area{
+    width: 80%;
+    margin-bottom: 2rem;
+   }
+    .hero-heading{
+        font-size: 35px;
+    }
+}
